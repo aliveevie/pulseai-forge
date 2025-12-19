@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Briefcase, Bot, Cpu, Key, Settings } from 'lucide-react';
-import pulseaiLogo from '@/assets/pulseai-logo.png';
+import { LayoutDashboard, Briefcase, Bot, Cpu, Key, Settings, Zap } from 'lucide-react';
 
 const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
@@ -16,7 +15,9 @@ export function Sidebar() {
     <aside className="fixed left-0 top-0 h-screen w-64 glass-strong border-r border-border/50 flex flex-col z-50">
       <div className="p-6 border-b border-border/50">
         <div className="flex items-center gap-3">
-          <img src={pulseaiLogo} alt="PulseAI" className="h-10 w-10 object-contain" />
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+            <Zap className="h-6 w-6 text-primary-foreground" />
+          </div>
           <div>
             <h1 className="text-xl font-bold text-gradient">PulseAI</h1>
             <p className="text-xs text-muted-foreground">Compute Agents</p>
