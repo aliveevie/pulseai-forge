@@ -2,6 +2,7 @@ import { Activity, Cpu, Bot, DollarSign, CheckCircle, Clock } from 'lucide-react
 import { StatCard } from '@/components/dashboard/StatCard';
 import { JobsTable } from '@/components/dashboard/JobsTable';
 import { GPUUtilizationChart } from '@/components/dashboard/GPUUtilizationChart';
+import { AgentOrchestrator } from '@/components/dashboard/AgentOrchestrator';
 import { mockJobs, mockGPUs, dashboardStats } from '@/data/mockData';
 
 export default function Dashboard() {
@@ -52,11 +53,15 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2">
-          <JobsTable jobs={mockJobs} />
+          <AgentOrchestrator />
         </div>
         <div>
           <GPUUtilizationChart gpus={mockGPUs} />
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6">
+        <JobsTable jobs={mockJobs} />
       </div>
     </div>
   );
