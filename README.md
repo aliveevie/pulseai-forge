@@ -1,73 +1,38 @@
-# Welcome to your Lovable project
+# PulseAI Compute Agents
 
-## Project info
+**Decentralized AI Compute Orchestration on Nosana**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
+PulseAI Compute Agents is a decentralized AI execution and orchestration system built on top of Nosana’s GPU marketplace. The project enables developers, startups, DAOs, and researchers to run real-world AI workloads—such as inference and lightweight fine-tuning—using decentralized GPU resources instead of centralized cloud providers.
 
-## How can I edit this code?
+## Problem
+Access to high-performance GPU compute is expensive, centralized, and restrictive. Most AI builders rely on cloud providers that introduce vendor lock-in, opaque pricing, regional limitations, and single points of failure. This limits experimentation, innovation, and global access to AI infrastructure.
 
-There are several ways of editing your application.
+## Solution
+PulseAI introduces an agent-based system that dynamically deploys AI workloads to Nosana’s decentralized GPU network. Intelligent agents manage job scheduling, GPU selection, execution, and result delivery based on cost, availability, and performance. This provides a scalable, censorship-resistant, and cost-efficient alternative for AI compute.
 
-**Use Lovable**
+## How It Uses Nosana
+- **Primary Compute Layer**: Nosana GPU marketplace serves as the backbone.
+- **Agent Dispatch**: AI agents dispatch inference and fine-tuning jobs to Nosana GPU nodes.
+- **Real Workloads**: GPU credits are used for LLMs, embeddings, vision, and speech tasks.
+- **Metrics**: Performance and execution metrics are tracked per job.
+- **Delivery**: Results are returned via APIs and Web3-compatible endpoints.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+This directly drives GPU demand and demonstrates Nosana’s capability to power production-grade AI applications.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Innovation
+- Agent-based decentralized GPU orchestration.
+- Real-world AI workloads running on decentralized infrastructure.
+- Cloudless AI execution without centralized dependencies.
+- Reusable infrastructure for other builders in the Nosana ecosystem.
 
-**Use your preferred IDE**
+## Long-Term Vision
+PulseAI aims to become a foundational decentralized AI execution layer for Web3 and open-source AI builders. Over time, it will offer APIs, SDKs, and reference implementations that make Nosana-powered AI accessible to both Web2 and Web3 developers.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Team
+**Built by ibxLab**
+- **Role**: Founder & Lead Developer
+- **Expertise**: Fullstack development, blockchain infrastructure, AI-integrated systems
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Funding Request
+Seeking $25,000–$35,000 (non-dilutive) for GPU compute, core development, orchestration logic, testing, and documentation.
